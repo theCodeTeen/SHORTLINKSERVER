@@ -12,7 +12,7 @@ exports.getLink = async (req, res, next) => {
 
     res.status(200).json({
       status: "success",
-      link: `http://${req.hostname}:${process.env.PORT}/${link._id}`,
+      link: `http://${req.hostname}/${link._id}`,
     });
   } catch (err) {
     console.log(err);
